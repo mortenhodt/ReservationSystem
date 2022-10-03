@@ -1,0 +1,30 @@
+{
+  "name": "eksamendis2021",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "server": "node app.js",
+    "loadbalancer": "node loadbalancer.js",
+    "seaport": "seaport listen 9090",
+    "start": "npm run seaport & npm run loadbalancer & npm run server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "homebrew": "^0.1.0",
+    "http-proxy": "^1.18.1",
+    "https": "^1.0.0",
+    "mongodb": "^4.2.0",
+    "mongoose": "^5.10.16",
+    "path": "^0.12.7",
+    "proxy": "^1.0.2",
+    "seaport": "^2.0.9"
+  },
+  "devDependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "description": ""
+}
